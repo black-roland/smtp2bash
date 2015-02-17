@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+
+var smtp = require('../src/app');
+var config = require('../src/config');
+var log = require('../src/log');
+
+smtp.listen(config.port);
+log.info('Server listening on 0.0.0.0:' + config.port);

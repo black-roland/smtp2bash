@@ -1,0 +1,5 @@
+{
+  "port": 25,
+  "exec": "bash",
+  "exec_arguments": [ "-c", "cat > /tmp/<%= to %>" ]
+}

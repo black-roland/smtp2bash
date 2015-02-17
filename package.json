@@ -1,0 +1,10 @@
+{
+  "name": "smtp2bash",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "^3.2.0",
+    "simplesmtp": "*",
+    "winston": "^0.9.0"
+  }
+}

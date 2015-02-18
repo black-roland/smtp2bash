@@ -5,5 +5,22 @@ var smtp = require('../src/app');
 var config = require('../src/config');
 var log = require('../src/log');
 
-smtp.listen(config.port);
-log.info('Server listening on 0.0.0.0:' + config.port);
+var listen = String(config.listen).split(':');
+
+switch(listen.length) {
+  case 1:
+    var address = '127.0.0.1';
+    var port = listen[0];
+    break;
+  case 2:
+    var address = listen[0];
+    var port = listen[1];
+    break;
+  default:
+    log.error('Invalid "listen" parameter');
+    process.exit(1);
+}
+
+smtp.listen(port, address, function() {
+  log.info('Server listening on ' + address + ':' + port);
+});

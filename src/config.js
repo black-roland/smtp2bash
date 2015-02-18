@@ -10,4 +10,4 @@ catch (err) {
   var config = {};
 }
 
-module.exports = _.merge({}, defaults, config);
+module.exports = _.assign({}, defaults, config);

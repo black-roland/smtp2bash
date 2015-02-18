@@ -1,5 +1,5 @@
 {
-  "port": 25,
+  "listen": "127.0.0.1:2525",
   "exec": "bash",
   "exec_arguments": [ "-c", "cat > /tmp/<%= to %>" ]
 }

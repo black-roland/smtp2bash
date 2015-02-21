@@ -1,4 +1,4 @@
-# smtp2bash
+# [smtp2bash](https://github.com/black-roland/smtp2bash)
 Simple SMTP-server that executes a specific script for each incoming message.
 
 ## Installation

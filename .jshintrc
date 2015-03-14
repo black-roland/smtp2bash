@@ -1,0 +1,16 @@
+{
+  // Predefined globals
+  "node": true,
+
+  // Development
+  "debug": false, // Allow debugger statements e.g. browser breakpoints
+  "devel": true, // Allow developments statements e.g. `console.log();`
+
+  // ECMAScript 5.
+  "strict": true, // Require `use strict` pragma in every file
+
+  // Persone styling prefrences.
+  "newcap": true, // Require capitalization of all constructor functions e.g. `new F()`
+  "sub": true, // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`
+  "indent": 2
+}

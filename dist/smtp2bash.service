@@ -1,0 +1,10 @@
+[Unit]
+Description=smtp2bash server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/smtp2bash/bin/smtp2bash
+
+[Install]
+WantedBy=multi-user.target
